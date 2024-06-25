@@ -1,16 +1,18 @@
+import style from "./style.module.scss"
+
 export function BookCard({ book }) {
 
     return (
-        <li>
+        <li className={style.bookCard}>
             <div>
-                <h3>
+                <h2 className="title2">
                     {book.name}
-                </h3>
-                <p>
+                </h2>
+                <p className="paragraph1">
                     {book.category}
                 </p>
             </div>
-            <span>
+            <span className="paragraph1 bold">
                 {book.price.toLocaleString("pt-BR", {style: "currency", currency: "BRL"} )}
             </span>
         </li>

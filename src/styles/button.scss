@@ -1,0 +1,33 @@
+.btn {
+
+    outline: none;
+    background-color: transparent;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    height: 5.1rem;
+
+    padding: 0 1.5rem;
+
+    border: solid 1px transparent;
+    border-radius: 8px;
+
+    color: var(--color-white);
+    font-family: var(--font-title);
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    background-color: var(--color-primary);
+
+    transition: .3s;
+
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(1.2);
+    }
+
+}

@@ -1,0 +1,29 @@
+%input {
+
+     border: solid 1px var(--color-primary);
+     border-radius: 8px;
+     
+     background-color: var(--color-white);
+     
+     padding: 0 2rem;
+     
+     font-family: var(--font-paragraph);
+     font-weight: 400;
+     font-size: 1.6rem;
+     color: var(--color-black);
+
+}
+
+.input-sm {
+
+    @extend %input;
+    height: 4.2rem;
+
+}
+
+.input-md {
+
+    @extend %input;
+    height: 5.1rem;
+
+}

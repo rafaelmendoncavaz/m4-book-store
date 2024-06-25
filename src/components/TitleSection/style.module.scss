@@ -1,0 +1,13 @@
+.titleSection {
+
+    background-color: var(--color-primary);
+
+    padding: 4rem 0;
+    
+}
+
+@media (max-width: 768px) {
+    .titleSection h1 {
+        text-align: center;
+    }
+}

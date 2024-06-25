@@ -1,27 +1,28 @@
-import { BookCard } from "./BookCard/BookCard";
+import { BookCard } from "./BookCard/BookCard"
+import style from "./style.module.scss"
 
 export function BookList({ search, bookSearch }) {
 
     return(
-        <div>
-            <span>
+        <div className={style.listBox}>
+            <span className="paragraph1 bold">
                 Livros Listados: {bookSearch.length}
             </span>
             {
                ( search
-                ? <p>Resultados de busca para: {search}</p>
+                ? <p className={`paragraph1 ${style.result}`}>Resultados de busca para: <strong>{search}</strong></p>
                 : null)
             }
             {
                 bookSearch.length > 0 
                 ? 
-                    (<ul>
+                    (<ul className={style.grid}>
                         {bookSearch.map(book => (
                             <BookCard key={book.id} book={book} />
                         ))}
                     </ul>)
                 : 
-                   (<p>
+                   (<p className="paragraph1">
                         Nenhum resultado encontrado
                     </p>)
             }

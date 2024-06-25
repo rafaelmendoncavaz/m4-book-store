@@ -1,0 +1,18 @@
+.flex {
+
+    display: flex;
+    gap: 4rem;
+
+    padding: 4rem 0;
+
+    & > div:last-child{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+}

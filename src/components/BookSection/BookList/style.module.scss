@@ -1,0 +1,28 @@
+.grid {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem 7rem;
+
+}
+
+.listBox {
+
+    & > span {
+        
+        display: block;
+        margin-bottom: 4rem;
+        text-align: end;
+
+    }
+
+    .result {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 960px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

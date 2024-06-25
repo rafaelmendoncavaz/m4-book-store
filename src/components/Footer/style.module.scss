@@ -1,0 +1,27 @@
+.flex {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3.2rem;
+
+}
+
+.footer {
+    
+    background-color: var(--color-primary);
+
+    padding: 1rem 0;
+
+    p {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .flex {
+        justify-content: center;
+    }
+}

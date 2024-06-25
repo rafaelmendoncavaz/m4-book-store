@@ -1,0 +1,52 @@
+%title {
+
+    font-family: var(--font-title);
+    font-weight: 700;
+    line-height: 1.4;
+    &.white {
+        color: var(--color-white);
+    }
+
+}
+
+%paragraph {
+
+    font-family: var(--font-paragraph);
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--color-black);
+    &.white {
+        color: var(--color-white);
+    }
+
+}
+
+.title1 {
+
+    @extend %title;
+    font-size: clamp(3.2rem, 5vw, 4rem);
+
+}
+
+.title2 {
+
+    @extend %title;
+    font-size: 1.6rem;
+
+}
+
+.paragraph1 {
+
+    @extend %paragraph;
+    &.bold, strong {
+        font-weight: 700;
+    }
+
+}
+
+.label {
+
+    @extend %paragraph;
+    font-size: 1.4rem;
+
+}

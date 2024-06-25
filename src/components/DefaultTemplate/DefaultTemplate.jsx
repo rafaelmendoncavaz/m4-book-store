@@ -7,7 +7,7 @@ export function DefaultTemplate({ children }) {
         <>
             <Header />
             <main>
-                {children}
+                { children } 
             </main>
             <Footer />
         </>

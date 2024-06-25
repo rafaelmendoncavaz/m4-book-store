@@ -1,0 +1,19 @@
+.bookCard {
+
+    box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.03);
+    border-left: 4px solid var(--color-primary);
+
+    padding: 4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3.2rem;
+    flex-wrap: wrap;
+
+    & > div {
+
+        min-width: clamp(0px, 100%, 300px);
+    }
+
+}

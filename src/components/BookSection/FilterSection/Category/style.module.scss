@@ -1,0 +1,45 @@
+.categoryFilters {
+
+    h2 {
+
+        margin-bottom: 2.5rem;
+
+    }
+
+    ul {
+
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+
+    }
+
+    li {
+
+        background-color: var(--color-primary);
+        align-self: self-start;
+
+        border: solid 1px transparent;
+        border-radius: 8px;
+
+        padding: .4rem;
+
+        transition: .3s;
+
+        cursor: pointer;
+
+        &:hover {
+            filter: brightness(1.2);
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .categoryFilters {
+        ul {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}

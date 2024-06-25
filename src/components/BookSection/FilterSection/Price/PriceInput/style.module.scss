@@ -1,0 +1,13 @@
+.flex {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+
+    input {
+
+        max-width: 100%;
+        width: 190px;
+        
+    }
+}
